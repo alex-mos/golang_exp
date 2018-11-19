@@ -1,8 +1,19 @@
 package main
 
 import (
+	"fmt"
+	"io"
 	"os"
 )
+
+func dirTree(out io.Writer, path string, printFiles bool) error {
+
+
+	//fmt.Fprintln(out, )
+	fmt.Printf("%T\n", os.Args)
+	fmt.Println(path)
+	return nil
+}
 
 func main() {
 	out := os.Stdout
