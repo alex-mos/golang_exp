@@ -3,8 +3,8 @@ package main
 import (
 	"bufio"
 	//"fmt"
-	"strings"
 	"bytes"
+	"strings"
 	"testing"
 )
 

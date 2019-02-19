@@ -11,6 +11,6 @@ func main() {
 	// myID := idx
 
 	myID := UserID(idx)
-	
+
 	println(uid, myID)
 }

@@ -8,7 +8,7 @@ func main() {
 
 	var user map[string]bool = map[string]bool{
 		"firstName": true,
-		"lastName": false,
+		"lastName":  false,
 	}
 
 	if _, keyExist := user["lastName"]; keyExist {
@@ -27,4 +27,3 @@ func main() {
 	//fmt.Println(user["lastName"])
 	//fmt.Println(user["pastName"])
 }
-

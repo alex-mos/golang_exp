@@ -8,9 +8,9 @@ import (
 
 type Person struct {
 	firstName string
-	lastName string
-	gender string
-	phone int
+	lastName  string
+	gender    string
+	phone     int
 }
 
 func (p *Person) setName(name string) {
@@ -32,7 +32,7 @@ func (p *Person) setPhone(phone string) {
 }
 
 type Account struct {
-	email string
+	email    string
 	password string
 }
 

@@ -20,7 +20,7 @@ func dirTree(out io.Writer, path string, printFiles bool) error {
 
 	for index, item := range items {
 		if item.IsDir() {
-			if index < len(items) - 1 {
+			if index < len(items)-1 {
 				fmt.Printf("├───")
 			} else {
 				fmt.Printf("└───")

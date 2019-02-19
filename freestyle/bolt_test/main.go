@@ -8,9 +8,9 @@ import (
 )
 
 type User struct {
-	Email string
+	Email    string
 	Password string
-	Age uint8
+	Age      uint8
 }
 
 func (user *User) save(db *bolt.DB) error {
@@ -30,7 +30,7 @@ func (user *User) save(db *bolt.DB) error {
 	return err
 }
 
-func main()  {
+func main() {
 	// Open the my.db data file in your current directory.
 	// It will be created if it doesn't exist.
 	db, err := bolt.Open("my.db", 0600, nil)

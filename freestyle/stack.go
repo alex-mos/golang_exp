@@ -11,10 +11,7 @@ func (s *Stack) push(val int) {
 func (s *Stack) pop() {
 	//poppedValue := *s[len(*s)-1]
 
-
-
 	//*s = *s[0, 1]
-
 
 	//return poppedValue
 }
@@ -23,7 +20,7 @@ func (s *Stack) size() int {
 	return len(*s)
 }
 
-func main()  {
+func main() {
 
 	var st = Stack([]int{})
 
@@ -33,16 +30,11 @@ func main()  {
 	fmt.Println(st)
 	fmt.Println(st.size())
 
-
 	//fmt.Println(st[0,1])
 	//fmt.Println(st.pop())
 
 	//fmt.Println(st)
 	//fmt.Println(st.size())
-
-
-
-
 
 	//fmt.Println(st)
 	//st[len(st)-1] = 0

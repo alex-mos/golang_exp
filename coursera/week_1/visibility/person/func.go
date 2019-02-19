@@ -8,7 +8,7 @@ func NewPerson(id int, name, secret string) *Person {
 	return &Person{
 		ID:     1,
 		Name:   "rvasily",
-		secret: "secret",
+		secret: "Bearer jhdafjdsbfjhsgk!@#r",
 	}
 }
 
