@@ -1,24 +1,16 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"os"
-	//"strconv"
+	"io/ioutil"
 )
 
 func main() {
-	input := bufio.NewScanner(os.Stdin)
-	//a := 0
-
-	for input.Scan() {
-		fmt.Println(input.Text())
-		//newInt, err := strconv.Atoi(input.Text())
-		//if err != nil {
-		//	panic(err)
-		//}
-		//a += newInt
+	str, err := ioutil.ReadAll(os.Stdin)
+	fmt.Fprintf(os.Stdout, "string: %s", str)
+	fmt.Fprintf(os.Stdout, "length: %d\n", len(str))
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "err: %s\n", err)
 	}
-	fmt.Println("end of file")
-	//fmt.Println(a)
 }
